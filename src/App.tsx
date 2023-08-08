@@ -6,9 +6,11 @@ function App() {
 
   return (
     <>
-      <h1>Hello World</h1>
+      <h1 className="text-6xl font-bold">Hello World</h1>
       <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
+        <button
+          className="bg-sky-500 hover:bg-sky-700 p-8"
+          onClick={() => setCount((count) => count + 1)}>
           count is {count}
         </button>
       </div>
