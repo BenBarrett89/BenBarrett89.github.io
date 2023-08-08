@@ -14,6 +14,14 @@ function App() {
           count is {count}
         </button>
       </div>
+      <div>
+        <p className="py-2">
+          <a href="/somewhere">Link to somewhere</a>
+        </p>
+        <p className="py-2">
+          <a href="/other">Link to other</a>
+        </p>
+      </div>
     </>
   )
 }
