@@ -7,9 +7,9 @@ function App() {
   return (
     <>
       <h1 className="text-6xl font-bold">Hello World</h1>
-      <div className="card">
+      <div className="py-8">
         <button
-          className="bg-sky-400 hover:bg-sky-800 px-10 py-4 rounded-xl"
+          className="bg-gradient-to-b from-purple-600 to-blue-600 hover:from-purple-900 hover:to-blue-900 px-10 py-4 rounded-xl"
           onClick={() => setCount((count) => count + 1)}>
           count is {count}
         </button>
