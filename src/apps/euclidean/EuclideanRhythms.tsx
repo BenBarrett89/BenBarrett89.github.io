@@ -1,23 +1,17 @@
-import { useEffect, useState } from "react"
+import { useState } from "react"
 
 // there are more than these, but these are the most common
 const timeSignatureLowerOptions = [1, 2, 4, 8, 16]
-
-function Note() {
-  return (
-    <div></div>
-  )
-}
 
 function EuclideanRhythms() {
   const [timeSignatureUpper, setTimeSignatureUpper] = useState(4);
   const [timeSignatureLower, setTimeSignatureLower] = useState(4);
   const [noteDivision, setNoteDivision] = useState(4);
-  const [numberOfBars, setNumberOfBars] = useState(1);
+  // const [numberOfBars, setNumberOfBars] = useState(1);
   // add tempo here later if adding playback
 
-  const [euclideanPulses, setEuclideanPulses] = useState(2);
-  const [euclideanRotation, setEuclideanRotation] = useState(4);
+  // const [euclideanPulses, setEuclideanPulses] = useState(2);
+  // const [euclideanRotation, setEuclideanRotation] = useState(4);
   // will need to look to change this later if allowing for multiple Euclidean blocks for differing lengths
 
   return (
