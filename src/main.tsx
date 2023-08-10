@@ -4,8 +4,11 @@ import {
   createHashRouter,
   RouterProvider,
 } from "react-router-dom"
+
 import App from './App.tsx'
+import EuclideanRhythms from './apps/euclidean/EuclideanRhythms.tsx'
 import ErrorPage from './ErrorPage.tsx'
+
 import './index.css'
 
 const router = createHashRouter([
@@ -15,8 +18,8 @@ const router = createHashRouter([
     errorElement: <ErrorPage/>,
   },
   {
-    path: "somewhere",
-    element: <App/>,
+    path: "euclidean",
+    element: <EuclideanRhythms />,
     errorElement: <ErrorPage/>,
   }
 ])

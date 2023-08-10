@@ -6,9 +6,9 @@ export default function ErrorPage() {
 
   return (
     <div id="error-page">
-      <h1>Oops!</h1>
-      <p className="m-3">Sorry, an unexpected error has occurred.</p>
-      <p className="m-10">
+      <h1 className="text-6xl font-bold">Error</h1>
+      <p className="py-8">Sorry, an unexpected error has occurred:</p>
+      <p className="py-8">
         <i>{error.statusText || error.message}</i>
       </p>
       <a href="/">Back home</a>
