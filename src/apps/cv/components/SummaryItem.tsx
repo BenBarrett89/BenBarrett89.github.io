@@ -1,7 +1,4 @@
-export interface SummaryItemProps {
-  title: string;
-  text: string;
-}
+import { SummaryItemProps } from "../cv-types";
 
 export function SummaryItem({ title, text }: SummaryItemProps) {
   return (

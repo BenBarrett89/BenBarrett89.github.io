@@ -1,27 +1,4 @@
-export type Position = {
-  title?: string | undefined;
-  startDate: string;
-  endDate: string;
-};
-
-export type Role = {
-  title: string;
-  projects?: Array<string>;
-};
-
-export type Responsibility = {
-  title: string;
-  description: string;
-};
-
-export interface JobProps {
-  title: string;
-  employer: string;
-  location: string;
-  positions: Array<Position>;
-  roles: Array<Role>;
-  responsibilities: Array<Responsibility>;
-}
+import { JobProps } from "../cv-types";
 
 export function Job({ job }: { job: JobProps }) {
   return (
