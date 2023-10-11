@@ -1,7 +1,7 @@
-import { useState } from "react"
+import { useState } from "react";
 
 // there are more than these, but these are the most common
-const timeSignatureLowerOptions = [1, 2, 4, 8, 16]
+const timeSignatureLowerOptions = [1, 2, 4, 8, 16];
 
 function EuclideanRhythms() {
   const [timeSignatureUpper, setTimeSignatureUpper] = useState(4);
@@ -32,22 +32,23 @@ function EuclideanRhythms() {
             step="1"
             value={timeSignatureUpper}
             onChange={(e) => setTimeSignatureUpper(parseInt(e.target.value))}
-            />
+          />
           <label htmlFor="timeSignatureLower">Time Signature Lower:</label>
           <select
             id="timeSignatureLower"
             name="timeSignatureLower"
             defaultValue={timeSignatureLower}
             onChange={(e) => setTimeSignatureLower(parseInt(e.target.value))}
-            >
-            ({timeSignatureLowerOptions.map(optionSize => 
-              <option
-                id={`timeSignatureLower${optionSize}`}
-                value={optionSize}
-                >{optionSize}</option>
-            )})
+          >
+            (
+            {timeSignatureLowerOptions.map((optionSize) => (
+              <option id={`timeSignatureLower${optionSize}`} value={optionSize}>
+                {optionSize}
+              </option>
+            ))}
+            )
           </select>
-          <label htmlFor="noteDivision">Note Divsion:</label>
+          <label htmlFor="noteDivision">Note Division:</label>
           <input
             type="number"
             id="noteDivision"
@@ -57,7 +58,7 @@ function EuclideanRhythms() {
             step="1"
             value={noteDivision}
             onChange={(e) => setNoteDivision(parseInt(e.target.value))}
-            />
+          />
         </form>
         <div className="flex flex-row">
           {/* Calculate and display pattern here */}
@@ -69,7 +70,7 @@ function EuclideanRhythms() {
         </div>
       </div>
     </>
-  )
+  );
 }
 
-export default EuclideanRhythms
+export default EuclideanRhythms;
