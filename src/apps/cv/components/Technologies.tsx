@@ -21,11 +21,11 @@ function TechnologyLink({ technology }: { technology: Technology }) {
 function Technologies({ technologies }: { technologies: Array<Technology> }) {
   return (
     <>
-      <div>
+      <div className="px-8 py-4">
         <Title title="Technologies" />
-        <ul>
+        <div className="grid grid-cols-3 grid-flow-row">
           {technologies.map((technology: Technology, index: number) => (
-            <li key={`technology-li-${index}`}>
+            <div className="p-1" key={`technology-li-${index}`}>
               <TechnologyLink
                 technology={technology}
                 key={`technology-${index}`}
@@ -48,9 +48,9 @@ function Technologies({ technologies }: { technologies: Array<Technology> }) {
                     }
                   )
                 : ""}
-            </li>
+            </div>
           ))}
-        </ul>
+        </div>
       </div>
     </>
   );

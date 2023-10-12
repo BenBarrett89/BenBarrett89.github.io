@@ -9,11 +9,13 @@ function WorkExperience({
 }) {
   return (
     <>
-      <div>
+      <div className="px-8 py-4">
         <Title title="Work Experience" />
-        {workExperience.map((job: JobProps, index: number) => (
-          <Job job={job} key={`job-${index}`} />
-        ))}
+        <div className="grid">
+          {workExperience.map((job: JobProps, index: number) => (
+            <Job job={job} key={`job-${index}`} />
+          ))}
+        </div>
       </div>
     </>
   );

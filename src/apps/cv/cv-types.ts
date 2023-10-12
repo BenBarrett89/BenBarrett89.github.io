@@ -17,6 +17,7 @@ export type Responsibility = {
 export interface JobProps {
   title: string;
   employer: string;
+  employerLink?: string,
   location: string;
   positions: Array<Position>;
   roles: Array<Role>;

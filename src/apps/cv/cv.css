@@ -1,0 +1,11 @@
+ul > li {
+  margin-left: 1.25em;
+}
+
+.job-container {
+  grid-template-columns: [first] 50% [second] 50% [end];
+}
+
+.list-circle {
+  list-style-type: circle;
+}
