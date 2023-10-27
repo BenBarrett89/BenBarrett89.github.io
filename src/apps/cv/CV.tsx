@@ -3,6 +3,7 @@ import {
   Achievements,
   Summary,
   Technologies,
+  Volunteering,
   WorkExperience,
 } from "./components";
 import data from "./data";
@@ -21,6 +22,7 @@ function CV() {
         <WorkExperience workExperience={data.workExperience} />
         <Achievements achievements={data.achievements} />
         <Academic academicQualifications={data.academicQualifications} />
+        <Volunteering volunteering={data.volunteering} />
       </div>
     </>
   );

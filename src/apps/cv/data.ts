@@ -4,6 +4,7 @@ import {
   JobProps,
   SummaryItemProps,
   Technology,
+  VolunteeringOpportunity,
 } from "./cv-types";
 
 const name = "Ben Barrett";
@@ -499,12 +500,148 @@ const academicQualifications: Array<AcademicQualification> = [
   },
 ];
 
+const volunteering: Array<VolunteeringOpportunity> = [
+  {
+    title: "Flying Start Champion",
+    organisation: "British Airways",
+    location: "Newcastle-upon-Tyne, Tyne and Wear",
+    startYear: "2016",
+    notes: [
+      {
+        text: "Fundraised for Flying Start - British Airway's partnership with Comic Relief",
+      },
+      {
+        text: "Attend and represent the charity at projects that Flying Start supports",
+      },
+    ],
+  },
+  {
+    title: "Volunteering",
+    organisation: "British Airways",
+    location: "Newcastle-upon-Tyne, Tyne and Wear",
+    startYear: "2016",
+    notes: [
+      {
+        text: "Newcastle Business Park Fun Run 2014, 2015, 2016",
+        subtext: ["Organise charity fun run event for business park"],
+      },
+      {
+        text: "Give & Gain Day 2016",
+        subtext: ["Lead a sports activity for children aged 7 to 11"],
+      },
+    ],
+  },
+  {
+    title: "Volunteering",
+    organisation: "Core Music CIC",
+    location: "Hexham, Northumberland",
+    startYear: "2012",
+    endYear: "2013",
+    notes: [
+      {
+        text: "Develop the charity's website (since replaced) ",
+      },
+      {
+        text: "Design digital and physical promotional material",
+      },
+      {
+        text: "Direct, film and edit podcasts",
+      },
+      {
+        text: "Rearrange and relabel stock items",
+      },
+    ],
+  },
+  {
+    title: "Volunteer Basketball Coaching",
+    organisation: "University of York",
+    location: "York, North Yorkshire",
+    startYear: "2009",
+    endYear: "2011",
+    notes: [
+      {
+        text: "Plan and run basketball sessions for the university second team (2009 - 2010) and first team (2010 - 2011)",
+      },
+      {
+        text: "Coach the university second team (2009 - 2010) and first team (2010 - 2011) in BUCS league basketball games",
+      },
+    ],
+  },
+  {
+    title: "Gap Year Volunteering",
+    organisation: "Project Trust",
+    location: "Tokyo, Japan",
+    startYear: "2007",
+    endYear: "2008",
+    notes: [
+      {
+        text: "Teach English at Local English Clubs",
+        subtext: [
+          "Plan and teach conversational English session for adults with a wide range of abilities",
+        ],
+      },
+      {
+        text: "Nursery",
+        subtext: [
+          "Play games with and help serve lunch children aged 1 to 4",
+          "Assist in teaching simple alphabet classes",
+        ],
+      },
+      {
+        text: "Bakery for the rehabilitation of Japanese people recently recovering from depression",
+        subtext: [
+          "Bake products with other volunteers",
+          "Package products for sale in the shop",
+        ],
+      },
+      {
+        text: "Japanese Sign Language Group",
+        subtext: [
+          "Attend Japanese sign language classes",
+          "Participate in group trips and help out at events",
+        ],
+      },
+    ],
+  },
+  {
+    title: "Volunteer Basketball Coaching",
+    organisation: "Hexham Youth Basketball Club",
+    location: "Hexham, Northumberland",
+    startYear: "2002",
+    endYear: "20007",
+    notes: [
+      {
+        text: "Coach basketball drills to club members aged 11 and up as England Basketball level 2 coach",
+      },
+      {
+        text: "Plan and run basketball session at local high school",
+      },
+      {
+        text: "Referee or table officiate basketball games as England Basketball qualified referee and table official",
+      },
+      {
+        text: "Coach school and local league teams in basketball games",
+      },
+      {
+        text: "Plan and run basketball sessions at local middles schools as part of club outreach programmes",
+      },
+      {
+        text: "Referee and facilitate at Sedgefield central venue league outreach programme",
+      },
+      {
+        text: "Attend and represent the club at volunteer recognition events such as Millennium Volunteer and Tynedale Sports Awards",
+      },
+    ],
+  },
+];
+
 const data = {
   academicQualifications,
   achievements,
   name,
   summary,
   technologies,
+  volunteering,
   workExperience,
 };
 

@@ -53,3 +53,17 @@ export type Technology = {
   link: string;
   subTechnologies?: Array<Technology>;
 };
+
+export type VolunteerNote = {
+  text: string;
+  subtext?: Array<string>;
+};
+
+export type VolunteeringOpportunity = {
+  title: string;
+  organisation: string;
+  location: string;
+  startYear: string;
+  endYear?: string;
+  notes: Array<VolunteerNote>;
+};
