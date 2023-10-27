@@ -1,3 +1,11 @@
+export type AcademicQualification = {
+  grade: string;
+  title: string;
+  institution?: string;
+  year?: string;
+  quantity?: number;
+};
+
 export type Award = {
   name: string;
   date: string;

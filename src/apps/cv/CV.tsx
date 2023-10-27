@@ -1,4 +1,5 @@
 import {
+  Academic,
   Achievements,
   Summary,
   Technologies,
@@ -19,6 +20,7 @@ function CV() {
         <Technologies technologies={data.technologies} />
         <WorkExperience workExperience={data.workExperience} />
         <Achievements achievements={data.achievements} />
+        <Academic academicQualifications={data.academicQualifications} />
       </div>
     </>
   );

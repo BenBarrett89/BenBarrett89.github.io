@@ -1,4 +1,5 @@
 import {
+  AcademicQualification,
   AchievementProps,
   JobProps,
   SummaryItemProps,
@@ -458,7 +459,48 @@ const achievements: AchievementProps = {
   ],
 };
 
+const academicQualifications: Array<AcademicQualification> = [
+  {
+    grade: "Distinction",
+    title: "MMus Music Technology and Computer Music",
+    institution: "University of Leeds",
+    year: "2012",
+  },
+  {
+    grade: "2:1",
+    title: "BEng Computer Science",
+    institution: "University of York",
+    year: "2011",
+  },
+  {
+    grade: "A",
+    title: "A2 Level Mathematics",
+    year: "2007",
+  },
+  {
+    grade: "A",
+    title: "A2 Level Information Communication Technology",
+    year: "2007",
+  },
+  {
+    grade: "B",
+    title: "A2 Level English Language",
+    year: "2007",
+  },
+  {
+    grade: "B",
+    title: "AS Level Physics",
+    year: "2006",
+  },
+  {
+    grade: "1 at grade A*, 6 at grade A and 3 at grade B",
+    title: "GCSE Level awards",
+    quantity: 10,
+  },
+];
+
 const data = {
+  academicQualifications,
   achievements,
   name,
   summary,
