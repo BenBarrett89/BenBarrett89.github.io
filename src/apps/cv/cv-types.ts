@@ -1,3 +1,13 @@
+export type Award = {
+  name: string;
+  date: string;
+};
+
+export type AchievementProps = {
+  personalAwards: Array<Award>;
+  projectAwards: Array<Award>;
+};
+
 export type Position = {
   title?: string | undefined;
   startDate: string;
@@ -17,7 +27,7 @@ export type Responsibility = {
 export interface JobProps {
   title: string;
   employer: string;
-  employerLink?: string,
+  employerLink?: string;
   location: string;
   positions: Array<Position>;
   roles: Array<Role>;

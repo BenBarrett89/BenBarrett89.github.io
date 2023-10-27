@@ -1,4 +1,9 @@
-import { Summary, Technologies, WorkExperience } from "./components";
+import {
+  Achievements,
+  Summary,
+  Technologies,
+  WorkExperience,
+} from "./components";
 import data from "./data";
 import "./cv.css";
 
@@ -13,6 +18,7 @@ function CV() {
         <Summary summary={data.summary} />
         <Technologies technologies={data.technologies} />
         <WorkExperience workExperience={data.workExperience} />
+        <Achievements achievements={data.achievements} />
       </div>
     </>
   );

@@ -1,4 +1,9 @@
-import { JobProps, SummaryItemProps, Technology } from "./cv-types";
+import {
+  AchievementProps,
+  JobProps,
+  SummaryItemProps,
+  Technology,
+} from "./cv-types";
 
 const name = "Ben Barrett";
 
@@ -207,7 +212,8 @@ const workExperience: Array<JobProps> = [
   {
     title: "Senior Software Engineer (G7 Grade)",
     employer: "Department for Work and Pensions",
-    employerLink: "https://www.gov.uk/government/organisations/department-for-work-pensions",
+    employerLink:
+      "https://www.gov.uk/government/organisations/department-for-work-pensions",
     location: "Newcastle-upon-Tyne, Tyne and Wear",
     positions: [
       { title: "G7 Grade", startDate: "September 2021", endDate: "July 2023" },
@@ -266,18 +272,15 @@ const workExperience: Array<JobProps> = [
       },
       {
         title: "Analysis",
-        description:
-          "Analyse business and technical requirements",
+        description: "Analyse business and technical requirements",
       },
       {
         title: "Code review",
-        description:
-          "Peer review code produced by colleagues",
+        description: "Peer review code produced by colleagues",
       },
       {
         title: "Prove concepts and improve patterns",
-        description:
-          "Create proofs of concept and application patterns",
+        description: "Create proofs of concept and application patterns",
       },
       {
         title: "Mentor team members",
@@ -296,8 +299,7 @@ const workExperience: Array<JobProps> = [
       },
       {
         title: "Community contribution",
-        description:
-          "Contribute to the wider software engineering community",
+        description: "Contribute to the wider software engineering community",
       },
       {
         title: "CI/CD pipelines",
@@ -321,11 +323,12 @@ const workExperience: Array<JobProps> = [
     employer: "British Airways",
     employerLink: "https://www.britishairways.com/",
     location: "Newcastle-upon-Tyne, Tyne and Wear",
-    positions: [
-      { startDate: "September 2013", endDate: "October 2016" },
-    ],
+    positions: [{ startDate: "September 2013", endDate: "October 2016" }],
     roles: [
-      { title: "Salesforce Developer", projects: ["New Distribution Capability"] },
+      {
+        title: "Salesforce Developer",
+        projects: ["New Distribution Capability"],
+      },
       {
         title: "Java Developer",
         projects: [
@@ -348,8 +351,7 @@ const workExperience: Array<JobProps> = [
       },
       {
         title: "Quality assurance",
-        description:
-          "Produce and run test suites and testing tools",
+        description: "Produce and run test suites and testing tools",
       },
       {
         title: "Collaboration",
@@ -358,8 +360,7 @@ const workExperience: Array<JobProps> = [
       },
       {
         title: "Documentation",
-        description:
-          "Produce project documentation including wiki pages",
+        description: "Produce project documentation including wiki pages",
       },
       {
         title: "Release support",
@@ -368,8 +369,7 @@ const workExperience: Array<JobProps> = [
       },
       {
         title: "Technical analysis",
-        description:
-          "Perform technical analysis of existing systems",
+        description: "Perform technical analysis of existing systems",
       },
       {
         title: "Adapt to selected methodology",
@@ -387,28 +387,21 @@ const workExperience: Array<JobProps> = [
     title: "Radio Advert Mixer (Casual Basis)",
     employer: "T7 Productions",
     location: "Haltwhistle, Northumberland",
-    positions: [
-      { startDate: "October 2012", endDate: "September 2013" },
-    ],
-    roles: [
-      { title: "Radio advert mixer" },
-    ],
+    positions: [{ startDate: "October 2012", endDate: "September 2013" }],
+    roles: [{ title: "Radio advert mixer" }],
     responsibilities: [
       {
         title: "Communication",
-        description:
-          "Book voice overs for recording sessions",
+        description: "Book voice overs for recording sessions",
       },
       {
         title: "Direction and recording",
-        description:
-          "Direct and record voice overs",
+        description: "Direct and record voice overs",
       },
       {
         title: "Mixing",
-        description:
-          "Mix radio adverts",
-      }
+        description: "Mix radio adverts",
+      },
     ],
   },
   {
@@ -416,9 +409,7 @@ const workExperience: Array<JobProps> = [
     employer: "Junten Junior/Senior High School",
     employerLink: "https://www.junten.ed.jp/",
     location: "Oji, Kita-ku, Tokyo",
-    positions: [
-      { startDate: "September 2007", endDate: "September 2008" },
-    ],
+    positions: [{ startDate: "September 2007", endDate: "September 2008" }],
     roles: [
       { title: "Conversational teaching assistant" },
       { title: "School representative" },
@@ -426,24 +417,49 @@ const workExperience: Array<JobProps> = [
     responsibilities: [
       {
         title: "Communication",
-        description:
-          "Book voice overs for recording sessions",
+        description: "Book voice overs for recording sessions",
       },
       {
         title: "Direction and recording",
-        description:
-          "Direct and record voice overs",
+        description: "Direct and record voice overs",
       },
       {
         title: "Mixing",
-        description:
-          "Mix radio adverts",
-      }
+        description: "Mix radio adverts",
+      },
     ],
   },
 ];
 
+const achievements: AchievementProps = {
+  personalAwards: [
+    {
+      name: "Nominated to shortlist for DWP Data & Analytics Leader of the Year",
+      date: "November 2022",
+    },
+    {
+      name: "DWP Digital Group Excellence Award for Transformation and Innovation",
+      date: "February 2018",
+    },
+    {
+      name: "Voucher awarded for Churchill project initial live release",
+      date: "October 2017",
+    },
+    {
+      name: "Voucher awarded for Churchill project React migration leadership",
+      date: "March 2017",
+    },
+  ],
+  projectAwards: [
+    {
+      name: "Churchill - Open Data Visualisation, Government Statistical Service Presentation and Dissemination Award",
+      date: "2017",
+    },
+  ],
+};
+
 const data = {
+  achievements,
   name,
   summary,
   technologies,
