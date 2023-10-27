@@ -17,7 +17,7 @@ function Qualification({
           <>, </>
         </li>
       ) : (
-        <li className="py-2">
+        <li className="py-1">
           <span className="italic">{qualification.grade}</span>
           <>, </>
           <span className="font-bold">{qualification.title}</span>
